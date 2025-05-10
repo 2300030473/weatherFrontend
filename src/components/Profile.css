@@ -1,0 +1,41 @@
+/* Profile.css */
+.profile-container {
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.2); /* Light black transparency */
+  color: #FFFFFF; /* White text */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Stronger shadow for card effect */
+  margin: 20px auto;
+  width: 80%; /* Reduced width for a more compact card */
+  max-width: 600px; /* Limit the maximum width */
+  text-align: center;
+}
+
+.profile-heading {
+  font-size: 2em; /* Increased font size for emphasis */
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #FFFFFF; /* White text */
+}
+
+.profile-details {
+  background-color: rgba(30, 30, 30, 0.3); /* Slightly darker transparency for contrast */
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 15px;
+  text-align: left;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* Enhanced shadow for depth */
+}
+
+.profile-details p {
+  margin: 10px 0;
+  font-size: 1.2em; /* Slightly larger text for readability */
+  color: #DDDDDD; /* Light gray text */
+}
+
+.loading,
+.error {
+  text-align: center;
+  color: red;
+  font-size: 1.2em; /* Slightly larger text for visibility */
+}

@@ -1,0 +1,34 @@
+.air-pollution-card {
+  background-color: rgba(0, 0, 0, 0.2); /* Light black transparency */
+  color: #FFFFFF; /* White text */
+  padding: 15px; /* Slightly increased padding */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px; /* Add margin to position below other elements */
+  width: 400px; /* Fixed width for consistency */
+  text-align: center;
+  position: relative;
+}
+
+.air-pollution-card h2 {
+  margin-top: 0;
+  font-size: 1.5rem; 
+  color: #e7e5d9; 
+}
+
+.pollution-details p {
+  margin: 8px 0; 
+  font-size: 1rem; 
+  color: #FFFFFF; 
+}
+
+.pollution-details strong {
+  color: #FFD700; 
+}
+
+.pollution-details {
+  text-align: left; 
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.2); 
+  border-radius: 5px;
+}

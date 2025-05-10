@@ -1,0 +1,254 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow-x: hidden; 
+  background-color: #000000; 
+  color: #FFFFFF; 
+}
+
+.home-page, .weather-page, .register-container, .login-container, .forgot-password-container {
+  min-height: 100vh; 
+  width: 100vw;
+  background: #0B486B; 
+  background: -webkit-linear-gradient(to top, #F56217, #0B486B);  
+  background: linear-gradient(to top, #F56217, #0B486B); 
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center; 
+  color: #FFFFFF;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.header img {
+  height: 50px; 
+}
+
+.header button, .back-button, .go-to-weather-button {
+  margin-left: 10px;
+  padding: 10px 20px;
+  background-color: #32CD32; 
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.header button:hover, .back-button:hover, .go-to-weather-button:hover {
+  background-color: #228B22; 
+}
+
+.header .login-button {
+  background-color: #1E90FF; 
+}
+
+.header .login-button:hover {
+  background-color: #104E8B; 
+}
+
+.home-page h1, .weather-page h1, .register-container h1, .login-container h1, .forgot-password-container h1 {
+  font-size: 3rem;
+  margin: 0;
+  color: #FFFFFF; 
+}
+
+.home-page p, .weather-page p, .register-container p, .login-container p, .forgot-password-container p {
+  font-size: 1.5rem;
+  color: #FFFFFF;
+}
+
+.weather-page form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.weather-page input {
+  margin-right: 10px;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 300px;
+}
+
+.weather-page button {
+  padding: 10px 20px;
+  background-color: #32CD32; 
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.weather-page button:hover {
+  background-color: #228B22; 
+}
+
+.weather-info {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.weather-info-card {
+  background-color: rgba(0, 0, 0, 0.2); 
+  color: #FFFFFF; 
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px; 
+  width: 400px; 
+  text-align: center;
+  position: relative;
+}
+
+.weather-info-card h2 {
+  margin-top: 0;
+}
+
+.weather-info-card img {
+  width: 60px; /* Decrease the size of the image */
+  height: 60px; /* Decrease the size of the image */
+}
+
+.weather-icons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.weather-icons img {
+  width: 30px;
+  height: 30px;
+}
+
+.weather-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal columns */
+  gap: 20px;
+  width: 100%; /* Take full width */
+  align-items: start; /* Align items to the start */
+}
+
+.weather-chart-card {
+  background-color: rgba(0, 0, 0, 0.2); /* Very light black transparency */
+  color: #FFFFFF; /* White text */
+  padding: 20px; /* Increase padding */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: fit; /* Set the width to 500px */
+  height: 450px;
+  margin-top: 15px;
+  width: 65%; /* Set the height to 200px */
+  text-align: center;
+  position: relative;
+}
+
+.forecast-card {
+  background-color: rgba(0, 0, 0, 0.2); /* Very light black transparency */
+  color: #FFFFFF; /* White text */
+  padding: 10px; /* Decrease padding */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  margin-left: -140.5px;
+  width: 1270px; /* Set the width to the full viewport width */
+  text-align: center;
+}
+
+.forecast-items {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.forecast-item {
+  background-color: rgba(30, 30, 30, 0.2); /* Very light black transparency */
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  width: 500px;
+}
+
+.register-container, .login-container, .forgot-password-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  color: white; /* White text color for better contrast */
+}
+
+.register-container form, .login-container form, .forgot-password-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.register-container input, .login-container input, .forgot-password-container input {
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 300px;
+}
+
+.register-container button, .login-container button, .forgot-password-container button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #32CD32; /* Lime green color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  width: 100%;
+  max-width: 300px;
+  transition: background-color 0.3s ease;
+}
+
+.register-container button:hover, .login-container button:hover, .forgot-password-container button:hover {
+  background-color: #228B22; 
+}
+
+.register-container .link, .login-container .link, .forgot-password-container .link {
+  color: #1E90FF;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.register-container .link:hover, .login-container .link:hover, .forgot-password-container .link:hover {
+  color: #104E8B; 
+  cursor: pointer;
+}
+
+.map-container {
+  height: 400px;
+  width: 100%;
+  margin-top: 20px;
+}

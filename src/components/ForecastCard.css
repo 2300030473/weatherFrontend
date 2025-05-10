@@ -1,0 +1,72 @@
+.forecast-card {
+  background-color: rgba(0, 0, 0, 0.2); /* Light black transparency */
+  color: #FFFFFF; /* White text */
+  padding: 15px;
+  padding-bottom: 70px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  width: 150%; /* Full width with some margin */
+  text-align: center;
+}
+
+.forecast-items {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 5 columns for large screens */
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.forecast-item {
+  background-color: rgba(30, 30, 30, 0.2); 
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  width: 150px;
+  height: 100%; /* Ensure consistent height */
+}
+
+.forecast-item img {
+  width: 50px;
+  height: 50px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .forecast-items {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .forecast-items {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for small screens */
+    gap: 10px;
+  }
+
+  .forecast-item {
+    width: auto; /* Adjust width for smaller screens */
+    padding: 8px;
+  }
+
+  .forecast-item img {
+    width: 40px;
+    height: 40px; /* Reduce icon size */
+  }
+}
+
+@media (max-width: 480px) {
+  .forecast-items {
+    grid-template-columns: 1fr; /* 1 column for very small screens */
+  }
+
+  .forecast-item {
+    width: auto; /* Full width for very small screens */
+    padding: 6px;
+  }
+
+  .forecast-item img {
+    width: 35px;
+    height: 35px; /* Further reduce icon size */
+  }
+}

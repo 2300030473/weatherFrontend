@@ -1,0 +1,117 @@
+.weather-page {
+  padding: 20px;
+  text-align: center;
+}
+
+.search-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.search-form input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+  width: 100%; /* Full width for smaller screens */
+  max-width: 300px; /* Limit the width */
+}
+
+.search-form button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+.search-form button:hover {
+  background-color: #0056b3;
+}
+
+.profile-icon {
+  color: #333;
+  font-size: 3.5rem;
+  position: absolute;
+  right: -500px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.profile-icon:hover {
+  color: #007bff;
+}
+
+.weather-content {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+  width: 100%;
+  align-items: start;
+}
+
+.weather-chart-card {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #FFFFFF;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%; /* Adjust width for responsiveness */
+  max-width: 890px; /* Limit the maximum width */
+  height: auto; /* Allow height to adjust dynamically */
+  margin-top: 15px;
+  text-align: center;
+  position: relative;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .weather-content {
+    grid-template-columns: 1fr; /* Stack items vertically */
+    gap: 15px;
+  }
+
+  .profile-icon {
+    position: static; /* Remove absolute positioning */
+    margin-top: 20px;
+    font-size: 2.5rem; /* Reduce size for smaller screens */
+  }
+
+  .search-form {
+    flex-direction: column; /* Stack input and button vertically */
+    align-items: stretch;
+  }
+
+  .search-form input {
+    margin-right: 0;
+    margin-bottom: 10px; /* Add spacing between input and button */
+  }
+
+  .weather-chart-card {
+    width: 100%; /* Full width for smaller screens */
+    height: auto; /* Adjust height dynamically */
+  }
+}
+
+@media (max-width: 480px) {
+  .search-form input {
+    font-size: 0.9rem; /* Reduce font size for smaller screens */
+  }
+
+  .search-form button {
+    font-size: 0.9rem; /* Reduce button font size */
+    padding: 8px 15px; /* Adjust padding */
+  }
+
+  .profile-icon {
+    font-size: 2rem; /* Further reduce size for very small screens */
+  }
+
+  .weather-chart-card {
+    padding: 15px; /* Reduce padding */
+  }
+}

@@ -1,0 +1,31 @@
+.daily-forecast-card {
+  background-color: rgba(0, 0, 0, 0.2); /* Light black transparency */
+  color: #FFFFFF; /* White text */
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  width: 95%; /* Full width with some margin */
+  text-align: center;
+}
+
+.daily-forecast-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.daily-forecast-item {
+  background-color: rgba(30, 30, 30, 0.2); /* Slightly darker transparency */
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  width: 150px; /* Fixed width for each item */
+}
+
+.daily-forecast-item img {
+  width: 50px;
+  height: 50px;
+}
